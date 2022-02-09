@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Aprendendo JavaScript</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script type="text/JavaScript" src='script.js'></script>
+    </head>
+
+    <body>
+
+        <h1>JavaScript básico</h1>
+
+        </br>
+
+        <button onclick="window.location.href ='https://www.google.com.br';">Google</button>
+        <button onclick="window.location.href ='contato.html';">Contato</button>
+        <button onclick="window.location.href = window.location.href ;">Atualizar</button>
+
+        </br>
+
+        <div id="area">
+            <h2>Prompt nome</h2>
+            <button onclick="document.getElementById('area').innerHTML = '</br>Bem vindo ' + prompt('Qual seu nome?');">Nome</button>
+        </div>
+
+        </br>
+
+        <div id="botao">
+            <h2>Muda nome do botão</h2>
+            <button onclick="this.innerHTML = prompt('Insira novo nome para o botão');">Muda botão</button>
+        </div><!----inner html faz com que altere oq esteja dentro da div que pertence---->
+
+        </br>
+
+        <div id="funcao">
+            <h2>Função Pessoa</h2>
+            <button onclick="funcaoPessoa()">Pessoa</button>
+        </div>
+
+        </br>
+
+        <div id="lista">
+            <h2>Listas (Comandos no console)</h2>
+            <strong>
+                var lista = ["Leonardo", "Matheus", "Lucas", "João", 15];</br>
+                .indexOf("string ou int"); (não existe = -1)</br>
+                lista[2];</br>
+                .join("," ou "-" ou "/"...);</br>
+                .pop(); (remove o último objeto)</br>
+                .shift(); (remove o primeiro objeto)</br>
+                lista[posição] = "novo nome"</br>
+                .push("nome"); (adiciona objeto)</br></br>
+                if(lista.indexOf("Leonardo") > -1){</br>
+                    alert("Item está na lista..")</br>
+                }else{</br>
+                    alert("Item não está na lista..")</br>
+                }</br>
+            </strong>
+        </div>
+
+        </br>
+
+        <div id="switch">
+            <h2>Switch/Case</h2>
+            <button onclick="switchCase()">Switch</button>
+        </div>
+
+        </br>
+
+        <div id="cookies">
+            <h2>Cookies e Sessão (Login)</h2>
+            <button onclick="loginCookie()">Fazer Login</button>
+            <button onclick="limparCookie()">Apagar credencial</button>
+        </div>
+
+        </br>
+
+        <div id="varletconst">
+            <h2>Var, Let, Const e String diferente</h2>
+            <strong>
+                var (cria variável global)</br>
+                let (variável que fica restrita onde foi criada)</br>
+                const (constante: valor fixo, não se altera)</br>
+                Concatenação diferente com crase para String ---> `Meu nome e: ${variavelNome}`</br>
+            </strong>
+        </div>
+
+        </br>
+
+        <div id="desconst">
+            <h2>Desconstrução de Objeto e de Array</h2>
+            <strong>
+                Exemplo de um objeto constante de Pessoa</br>
+                const pessoa = {</br>
+                    nome: "Leonardo", </br>
+                    sobrenome: "Santos", </br>
+                    idade: 23</br>
+                };</br></br>
+                Para pegar somente algumas das informações do objeto pessoa: </br>
+                let { sobrenome, idade } = pessoa;</br></br>
+                Para pegar um valor dentro de um Array e colocar em variável: </br>
+                let { posição: nomeVariável } = array;</br></br>
+                Para pegar mais de um valor dentro de um Array e colocar em variável: </br>
+                let { posição: nomeVariável, posição: nomeVariável } = array;</br></br>
+                Posições em Array para variáveis: </br>
+                let [ nomeVariável, nomeVariável ] = array;</br>
+                *Em sequencia 0,1,2..</br>
+            </strong>
+        </div>
+
+
+
+    </body>
+</html>
