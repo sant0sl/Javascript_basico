@@ -101,3 +101,6 @@ function limparCookie(){
     alert('Não há mais registro de credencial!');
 }
 
+function testeGit(){
+    
+}
