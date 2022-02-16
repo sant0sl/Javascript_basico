@@ -111,7 +111,82 @@
             </strong>
         </div>
 
-        Teste git
+        </br>
+
+        <div id="spread">
+            <h2>Spread e Rest Operator</h2>
+            <strong>
+                let primeiros = [1,2,3];</br>
+                let numeros = [...primeiros, 4,5,6];</br>
+                * Sem o spread iria adicionar um array dentro de outro array</br>
+                Exemplo:</br>
+                let pessoa = {</br>
+                    nome: "Leonardo",</br>
+                    idade: 23,</br>
+                    cidade: Lapa</br>
+                };</br>
+                let novaPessoa = {</br>
+                    ...pessoa,</br>
+                    anoAtual: 2022,</br>
+                    anoNascimento: 1998</br>
+                };</br>
+            </strong>
+        </div>
+
+        </br>
+
+        <div id="ArrayMap">
+            <h2>Map em Array</h2>
+            <strong>
+                const lista = [1,2,3,4,5,6];</br>
+                --- percorre a lista ---</br>
+                const novaLista = lista.map(function(item){</br>
+                    return item * 5;</br>
+                });</br>
+                console.log(novaLista);</br>
+                --- percorre a lista e somando com o index da vez ---</br>
+                const novaLista = lista.map(function(item, index){</br>
+                    return item + index;</br>
+                });</br>
+                console.log(novaLista);</br>
+                --- soma todos os itens da lista ---</br>
+                const soma = lista.reduce(function(total, proximo){</br>
+                return total + proximo;</br>
+                });</br>
+            </strong>
+        </div>
+
+        </br>
+
+        <div id="includes">
+            <h2>includes, endsWith e startsWith</h2>
+            <strong>
+                includes: função booleana que verifica em uma lista a partir de uma string, a existência ou não de algo dentro da lista</br>
+                endsWith: função booleana que verifica em uma variável string, se termina com tal parâmetro</br>
+                startsWith: função booleana que verifica em uma variável string, se começa com tal parâmetro</br>
+                * TRABALHA COM CASE SENSITIVE</br>
+            </strong>
+        </div>
+
+        </br>
+
+        <div id="someevery">
+            <h2>some e every</h2>
+            <strong>
+                Exemplo:</br>
+                let nomes = ['Leonardo', 'Matheus', 'Douglas'];</br>
+                nomes.some(nomes => nomes === 'Leonardo');</br>
+                * some: verificação booleana (OU) (||)</br>
+                </br>
+                let nomes = [</br>
+                    {nome: 'Leonardo',idade: 23},</br>
+                    {nome: 'Matheus',idade: 25},</br>
+                    {nome: 'Douglas',idade: 21}</br>
+                ];</br>
+                nomes.every(nome => nome.idade >= 18);</br>
+                * every: verificação booleana (E) (&&)</br>
+            </strong>
+        </div>
 
     </body>
 </html>

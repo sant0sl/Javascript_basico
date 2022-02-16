@@ -101,6 +101,27 @@ function limparCookie(){
     alert('Não há mais registro de credencial!');
 }
 
-function testeGit(){
-    
+function cadastroPessoaSpread(dados){
+    let novosDados = {
+        ...dados,
+        idade: 23,
+        status: 1,
+        id: 1
+    };
+    return novosDados;
 }
+//console.log(cadastroPessoaSpread({nome: 'Leonardo',sobrenome: 'Sampaio',anoInicio: 2022}));
+
+//Funções anonimas (redução de código), exemplo de escrever uma função dentro de outra função
+//Exemplo = retira function da frente e coloca em seguida '=>'
+//return também pode ser removido, em caso de função simples
+function adicionarRest(...numeros){
+    let totalSimples = numeros.reduce((total, proximo) =>  total + proximo);
+    let totalComplexo = numeros.reduce((total, proximo) => {
+        let soma = total + proximo;
+        return soma;
+    });
+    //console.log(totalSimples);
+}
+adicionarRest(1,2,3,4,5,6);
+
